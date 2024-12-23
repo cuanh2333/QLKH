@@ -1,0 +1,31 @@
+/* styles.css */
+
+/* Cải thiện giao diện navbar */
+.navbar {
+    padding: 10px 0; /* Khoảng cách bên trong navbar */
+    border-bottom: 2px solid #ddd; /* Viền dưới cho navbar */
+}
+
+.navbar-brand {
+    font-size: 1.8em; /* Tăng kích thước chữ cho logo */
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1.1em; /* Kích thước chữ cho các liên kết */
+    padding: 10px 15px; /* Khoảng cách giữa các nút */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #007bff; /* Màu nền khi hover */
+    color: white; /* Màu chữ khi hover */
+    border-radius: 5px; /* Bo tròn các góc khi hover */
+}
+
+/* Cải thiện giao diện trên thiết bị di động */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center; /* Căn giữa các liên kết trên màn hình nhỏ */
+    }
+}

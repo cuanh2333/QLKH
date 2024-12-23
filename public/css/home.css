@@ -1,0 +1,148 @@
+/* Định dạng Navbar */
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+  }
+  
+  
+  
+  .navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Định dạng cho modal */
+  .alert-dismissible .btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+  }
+  
+  /* Thông báo */
+  .announcement-section {
+    background-color: #D02D24; /* Màu nền đỏ */
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .announcement-section .announcement-title {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .announcement-section .announcement-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .announcement-section .announcement-list li {
+    margin: 10px 0;
+  }
+  
+  /* Hướng dẫn */
+  .guide-section {
+    background-color: #F8F9FA;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .guide-section .guide-title {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .guide-section .guide-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .guide-section .guide-list li {
+    margin: 10px 0;
+  }
+  
+  /* Style cho tên logo */
+  .logo-text {
+    font-size: 1.8rem; /* Tăng kích thước chữ */
+    font-weight: 600; /* Làm chữ đậm nhưng không quá dày */
+    color: #808080; /* Màu xám cho tên logo */
+    font-family: 'Roboto', sans-serif; /* Chọn font đẹp và dễ đọc */
+    letter-spacing: 1px; /* Thêm khoảng cách giữa các chữ cái */
+    text-transform: capitalize; /* Viết hoa chữ cái đầu */
+    transition: color 0.3s ease; /* Thêm hiệu ứng chuyển màu khi hover */
+  }
+  
+  /* Hiệu ứng khi hover vào tên logo */
+  .logo-text:hover {
+    color: #ffffff; /* Màu trắng khi hover */
+    text-decoration: none; /* Không có đường gạch dưới khi hover */
+  }
+  
+  /* Style cho thanh thông báo */
+  .alert {
+    background-color: #dc3545; /* Màu nền đỏ */
+    color: white; /* Màu chữ trắng */
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  /* Style cho nội dung thông báo */
+  .alert-text {
+    font-weight: 600; /* Làm cho văn bản nổi bật hơn */
+  }
+  
+  /* Đóng thanh thông báo */
+  .btn-close {
+    background: white; /* Đổi màu nút đóng */
+    color: #dc3545; /* Màu nút đóng trùng với màu của thanh thông báo */
+  }
+  
+
+/* Giúp các nút chức năng không bị che khuất */
+
+/* Đảm bảo container có thể thu nhỏ mà vẫn giữ layout */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-responsive {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 20px; /* Đảm bảo có khoảng cách ở dưới bảng */
+}
+
+.table {
+  table-layout: auto; /* Cho phép tự động phân bổ không gian cột */
+}
+
+.table td .btn {
+  display: inline-block; /* Đảm bảo nút không bị ẩn */
+  margin: 0 5px; /* Thêm khoảng cách giữa các nút */
+}
+
+@media (max-width: 768px) {
+  .col-md-4, .col-md-8 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .table-responsive {
+    margin-bottom: 20px;
+  }
+
+  /* Điều chỉnh các nút trong cột hành động cho màn hình nhỏ */
+  .table td .btn {
+    font-size: 12px; /* Giảm kích thước nút nếu cần */
+    padding: 4px 8px; /* Giảm khoảng cách bên trong nút */
+  }
+
+  .table td {
+    white-space: nowrap; /* Đảm bảo văn bản không bị cắt ngắn */
+  }
+}
+
+.selected {
+    background-color: #d1ecf1; /* Màu nền khi dòng được chọn */
+}
